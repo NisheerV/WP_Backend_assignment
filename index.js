@@ -14,7 +14,7 @@ app.listen(7000, function(){
     console.log("Server started on port 7000");
 });
 
-// const client = new MongoClient("mongodb+srv://newuser:Mongodb_cloud135@cluster0.hiope.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+// const client = new MongoClient(`mongodb+srv://newuser:${process.env.DB_PASSWORD}@cluster0.hiope.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 
 // client.connect().then((mClient) => {
 //     const db = mClient.db();
